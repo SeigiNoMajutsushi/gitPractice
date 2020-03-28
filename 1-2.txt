@@ -1,0 +1,52 @@
+$ git push origin master
+To https://github.com/SeigiNoMajutsushi/gitPractice.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/SeigiNoMajutsushi/gitPractice.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), 296 bytes | 0 bytes/s, done.
+From https://github.com/SeigiNoMajutsushi/gitPractice
+   efa4ea8..3a3ed02  master     -> origin/master
+Auto-merging 1-1.txt
+CONFLICT (content): Merge conflict in 1-1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+<<<<<<< HEAD
+Yo
+=======
+Ah-ha-ha
+>>>>>>> 3a3ed02820b3baea98b72a0672aa61950ff01c81
+
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   1-1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1-2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        desktop.ini
