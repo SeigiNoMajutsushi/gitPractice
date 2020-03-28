@@ -1,4 +1,12 @@
 Hi
 once more Hi
 again
-Ah-ha-ha from PC
+<<<<<<< HEAD
+Ah-ha-ha from PC third added
+=======
+<<<<<<< HEAD
+Yo from N second added
+=======
+Ah-ha-ha from PC first added
+>>>>>>> 3a3ed02820b3baea98b72a0672aa61950ff01c81
+>>>>>>> a8535ccebf9353d056acf1b69a03896c36a4fb2c
