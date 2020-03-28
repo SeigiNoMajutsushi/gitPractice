@@ -50,3 +50,21 @@ Changes not staged for commit:
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         desktop.ini
+
+
+git pull on N after branchPC
+$ git pull
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 14 (delta 7), reused 11 (delta 4), pack-reused 0
+Unpacking objects: 100% (14/14), 1.39 KiB | 2.00 KiB/s, done.
+From https://github.com/SeigiNoMajutsushi/gitPractice
+   a8535cc..8936303  master      -> origin/master
+ * [new branch]      firstBranch -> origin/firstBranch
+Updating a8535cc..8936303
+Fast-forward
+ 1-1.txt | 8 ++++++--
+ 1-4.txt | 0
+ 2 files changed, 6 insertions(+), 2 deletions(-)
+ create mode 100644 1-4.txt
